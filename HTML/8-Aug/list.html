@@ -4,14 +4,38 @@
         <title>Lists</title>
     </head>
     <body>
+        <!-- ul -->
         <ul>
             <li>Hyderabad</li>
             <li>Bangalore</li>
             <li>Chennai</li>
-            <li>Delhi</li>
+            <li>Delhi</li>  
         </ul>
 
-        
+        <!-- ul: list-style-type: disc | circle | Square | none -->
+        <ul style="list-style-type:square">
+            <li>Hyderabad</li>
+            <li>Bangalore</li>
+            <li>Chennai</li>
+            <li>Delhi</li>  
+        </ul>
+
+        <!-- nested lists -->
+        <ul>
+            <li>
+                Hyderabad                
+                <ul>
+                    <li>Hitech</li>
+                    <li>Madhapur</li>
+                    <li>Ameerpet</li>
+                </ul>
+            </li>
+            <li>Bangalore</li>
+            <li>Chennai</li>
+            <li>Delhi</li>  
+        </ul>
+
+        <!-- ol -->
         <ol>
             <li>Hyderabad</li>
             <li>Bangalore</li>
@@ -19,15 +43,30 @@
             <li>Delhi</li>
         </ol>
 
-
-        <!-- ul: list-style-type: disc | circle | Square | none -->
         <!-- ol: type: 1 | A | a | I | i -->
-        <!-- ol : start: some number -->
-        <!-- nested lists -->
+        <ol type="A">
+            <li>Hyderabad</li>
+            <li>Bangalore</li>
+            <li>Chennai</li>
+            <li>Delhi</li>
+        </ol>
 
+        
+        <!-- ol : start: some number -->
+        <ol start="30">
+            <li>Hyderabad</li>
+            <li>Bangalore</li>
+            <li>Chennai</li>
+            <li>Delhi</li>
+        </ol>
+
+        <!-- dl -->
         <dl>
             <dt>HTML</dt>
-            <dd>- Hyoer Text Markup Language</dd>
+            <dd>- Hyper Text Markup Language</dd>
+            <dd>- Hyper Text Markup Language</dd>
+            <dd>- Hyper Text Markup Language</dd>
+            <dd>- Hyper Text Markup Language</dd>
             <dt>CSS</dt>
             <dd>- Cascading Style Sheets</dd>            
             <dt>JS</dt>

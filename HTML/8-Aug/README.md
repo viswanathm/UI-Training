@@ -14,6 +14,16 @@
 * this adds space before the para
 * useful while writing content
 
+*Note*: Usage of DIV vs SPAN vs P
+
+* we use DIV as a container
+* We use SPAN for styling a portion of text
+* We use P for descriptive paragrpahs
+
+-- Use DIV, SPAN, P semantically...
+
+
+
 ---
 
 # Text Formatting
