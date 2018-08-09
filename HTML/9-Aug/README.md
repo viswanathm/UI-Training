@@ -42,3 +42,11 @@ Some important attributes:
 * `src` attribute to set source to iframe
 * `srcdoc` attribute for setting HTML content to iframe
 * `sandbox` attribute to give security
+
+
+----
+
+# Assignment
+
+* Menu with icon + text
+* Collage (Table + image)
