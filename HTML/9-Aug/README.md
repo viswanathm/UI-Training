@@ -30,19 +30,6 @@ Some important attributes:
 * We can give local path or url for `src` attribute
 * We can set border (border="5")
 * Aligns the image relative to siblings
-* Server maps - for sending mouse co-ordinates to server
-* client maps - to detect clicking on a portion of image
-
-
----
-
-# Iframe `<Iframe/>`
-
-* We can load a webpage in this tag
-* `src` attribute to set source to iframe
-* `srcdoc` attribute for setting HTML content to iframe
-* `sandbox` attribute to give security
-
 
 ----
 
