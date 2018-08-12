@@ -8,15 +8,6 @@
 
 ---
 
-# Iframe `<Iframe/>`
-
-* We can load a webpage in this tag
-* `src` attribute to set source to iframe
-* `srcdoc` attribute for setting HTML content to iframe
-* `sandbox` attribute to give security
-
----
-
 # Pre `<Pre></Pre>`
 
 * We use this to render content AS IS
@@ -43,5 +34,4 @@
 # Assignment
 
 * Floor plan - Image mapping
-* Documentation website
 * Slide show banner for portfolio website
