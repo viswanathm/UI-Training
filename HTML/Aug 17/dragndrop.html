@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      
+      <style type="text/css">
+        #boxA, #boxB {
+            float:left;
+            padding:10px;
+            margin:10px;
+        }
+        
+        #boxA { 
+            background-color: #6633FF;
+            width:75px; 
+            height:75px;  
+        }
+        #boxB { 
+            background-color: #FF6699;
+            width:150px; 
+            height:150px; 
+        }
+      </style>
+      
+      <script type="text/javascript">
+        function showAlert(){
+            alert('Clicked on body');
+        }
+
+         function dragStart(ev) {
+            ev.dataTransfer.effectAllowed='move';
+            ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
+            ev.dataTransfer.setDragImage(ev.target,0,0);
+            
+            return true;
+         }
+         
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }        
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+      </script>
+      
+   </head>
+   <body onclick="showAlert()">
+      
+      <center>         
+         <div id="boxA" draggable="true" ondragstart="dragStart(event)">
+            <p>Drag Me</p>
+         </div>
+         
+         <div id="boxB" ondrop="drop(event)" ondragover="allowDrop(event)">Dustbin</div>
+      </center>
+      
+   </body>
+</html>
