@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <style>
+            .internal{
+                background: orange;
+            }
+
+            .external{
+                background: yellow;
+            }
+
+            #background-grey{
+                background: grey !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background: red;">
+            CSS inline style
+        </div>
+        <span class="internal">Span internal</span>
+        <div class="internal">
+            CSS internal style
+        </div>
+        <div class="external" id="background-grey" style="background: pink;">
+            CSS external style
+        </div>
+    </body>
+</html>
