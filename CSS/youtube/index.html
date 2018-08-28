@@ -5,45 +5,83 @@
             body{
                 padding: 0px;
                 margin: 0px;
+                background: #FAFAFA;
             }
+            
             video{
                 width: 150px;
                 height: 150px;
             }    
+            
             .description{
                 font-size: 12px;
                 color: #ccc;
             }
+            
             .video-set{
                 display: inline-block;
             }
+
             .header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background: #FFF;
 				border-bottom: 1px solid #ccc;
+                box-shadow: 3px 3px 10px #ccc;
+                height: 60px;
+            }
+
+            .logo{
+                margin-left: 30px;
+            }
+
+            .header input[type="text"]{
+                width: 350px;
+                height: 25px
+            }
+
+            .header input[type="submit"]{                
+                /* background: url('search.png') center no-repeat #ddd; */
+                border: 1px solid #999;
+                height: 31px;
+                background-size: contain;
             }
 
             .user {
-                font-size: 20px;
+                background: url(blank.png) center;
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            .channel {
+                margin: 10px 30px;
+                border-bottom: 1px solid #ccc;
+                padding: 20px 0px;
+            }
+
+            .channel .channel-name{
+                margin: 20px 0px;
+                font-size: 18px;
             }
         </style>
     </head>
     <body>
         <div class="header">
-            <div>
-                <img src="logo.png" width="100px"/>
+            <div class="logo">
+                <img src="logo.png" width="100px"  height="40px"/>
             </div>
             <div>
                 <input type="text"/><input type="submit" value="Search"/>
             </div>
             <div class="user">
-                Viswanath
             </div>
         </div>
-        <fieldset>
-            <legend>Recommended</legend>
+        <div class="channel">
+            <div class="channel-name">Recommended</div class="channel-name">
             <div class="video-set">
                 <video src="countdown.ogg" controls> </video>
                 <div>Title</div>
@@ -64,9 +102,9 @@
                 <div>Title</div>
                 <div class="description">Description</div>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Channel 1</legend>
+        </div class="channel">
+        <div class="channel">
+            <div class="channel-name">Channel 1</div class="channel-name">
             <div class="video-set">
                 <video src="countdown.ogg" controls> </video>
                 <div>Title</div>
@@ -87,9 +125,9 @@
                 <div>Title</div>
                 <div class="description">Description</div>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Channel 2</legend>
+        </div class="channel">
+        <div class="channel">
+            <div class="channel-name">Channel 2</div class="channel-name">
             <div class="video-set">
                 <video src="countdown.ogg" controls> </video>
                 <div>Title</div>
@@ -110,9 +148,9 @@
                 <div>Title</div>
                 <div class="description">Description</div>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Channel 3</legend>
+        </div class="channel">
+        <div class="channel">
+            <div class="channel-name">Channel 3</div class="channel-name">
             <div class="video-set">
                 <video src="countdown.ogg" controls> </video>
                 <div>Title</div>
@@ -133,6 +171,6 @@
                 <div>Title</div>
                 <div class="description">Description</div>
             </div>
-        </fieldset>
+        </div class="channel">
     </body>
 </html>
