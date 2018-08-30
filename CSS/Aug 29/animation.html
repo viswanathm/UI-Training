@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            /* @keyframes colorchange {
+                from {background-color: red;}
+                to {background-color: yellow;}
+            }
+
+            @keyframes colorchange {
+                0%   {background-color: red;}
+                10%  {background-color: yellow;}
+                70%  {background-color: pink;}
+                100% {background-color: green;}
+            } */
+
+            @keyframes colornposition {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            
+
+            div {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                background-color: red;
+                animation-name: colornposition;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+        </style>
+    </head>
+    <body>
+            <div>adasdas</div>
+    </body>
+</html>
