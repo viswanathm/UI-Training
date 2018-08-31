@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            span {
+                position: relative;
+                text-decoration: underline;
+                color: #00F;
+                cursor: help;
+            }
+            
+            span:hover::after {
+                content: attr(data-descr);
+                position: absolute;
+                left: 0;
+                top: 24px;
+                min-width: 200px;
+                border: 1px #aaaaaa solid;
+                border-radius: 10px;
+                background-color: #ffffcc;
+                padding: 12px;
+                color: #000000;
+                font-size: 14px;
+                z-index: 1;
+            }
+
+            p::after{
+                content: 'Testing pseudo elemets';
+                color: red;
+                background: yellow;
+            }
+
+            p::first-letter {
+                color: red;
+                font-size: 40px;
+            }
+
+            p::selection {
+                color: white;
+                background: black;
+            }
+
+            p::first-line {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>        
+        <p>Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some Here we have some 
+                <span data-descr="collection of words and punctuation">text</span> with a few
+                <span data-descr="small popups that appear when hovering">tooltips</span>.
+        </p>
+    </body>
+</html>
+
