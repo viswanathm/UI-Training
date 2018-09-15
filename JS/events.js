@@ -1,20 +1,4 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <input id="password"/>
-        <div id="time">
-            this will show time
-        </div>
-        <button id="change">Change</button>
-    </body>
-    
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 
-    <script>
         var btn = document.getElementById("change");
         btn.addEventListener("click", function(){
             console.log("Btn clicked");
@@ -35,7 +19,6 @@
         });
 
 
-
         // function listener(){
         //     console.log(new Date())
         // };
@@ -44,13 +27,3 @@
         // $("#change").on("click", function(){
         //     alert("Hi");
         // })
-    </script> 
-          
-
-    <!-- <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-    <script src="src.js"></script> -->
-</html>

@@ -36,6 +36,19 @@ for(var i=1; i <= 10; i++){
     console.log(tableNumber + " X " + i + " = " + (tableNumber*i));
 }
 
+// Tables with functions
+var tableNumber = prompt("which table u want to print?");
+        
+function table(num){
+    for(var i=1; i <= 10; i++){
+        console.log(num + " X " + i + " = " + (parseInt(num)*i));
+    }         
+}
+
+table(tableNumber);
+
+
+
 // Print characters in a string
 var str = "abcdefgh";
 for(var i=0; i<str.length; i++){
