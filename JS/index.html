@@ -1,56 +1,41 @@
 <html>
     <head>
+        <style>
+            #result{
+                width: 100px;
+                height: 100px;
+                background: #ccc;
+                border: 1px solid #666;
+            }
+        </style>
     </head>
     <body>
-        <input id="password"/>
-        <div id="time">
-            this will show time
-        </div>
-        <button id="change">Change</button>
+        <button id="animate">Animate</button>
+        <button id="reset">Reset</button>
+        <div id="result">Test</div>
     </body>
-    
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-        var btn = document.getElementById("change");
-        btn.addEventListener("click", function(){
-            console.log("Btn clicked");
-        });
+        // $(document).ready(function(){            
+        // });
 
-        btn.addEventListener("mouseover", function(){
-            console.log("Btn mouse overed");
-        });
+        document.getElementById("animate").addEventListener('click', function(){
+            $("#result").animate({width: "200px", height: "200px", padding: "20px"}, 1000);
+        })
+
+        document.getElementById("reset").addEventListener('click', function(){
+            $("#result").animate({width: "100px", height: "100px"});
+        })
         
 
-        btn.addEventListener("mouseout", function(){
-            console.log("Btn mouse out");
-        });
-
-        var pwd = document.getElementById("password");
-        pwd.addEventListener("keyup", function(){
-            console.log(event.target.value.length);
-        });
 
 
-
-        // function listener(){
-        //     console.log(new Date())
-        // };
-        // btn.addEventListener("click", listener);
-
-        // $("#change").on("click", function(){
-        //     alert("Hi");
-        // })
+        // (selector).animate({styles},speed,easing,callback)
     </script> 
           
 
-    <!-- <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="src.js"></script> -->
 </html>
