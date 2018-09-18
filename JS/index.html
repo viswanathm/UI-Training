@@ -11,31 +11,17 @@
     </head>
     <body>
         <button id="animate">Animate</button>
-        <button id="reset">Reset</button>
-        <div id="result">Test</div>
+        <div id="result"></div>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
+    <script> 
         // $(document).ready(function(){            
         // });
 
         document.getElementById("animate").addEventListener('click', function(){
             $("#result").animate({width: "200px", height: "200px", padding: "20px"}, 1000);
         })
-
-        document.getElementById("reset").addEventListener('click', function(){
-            $("#result").animate({width: "100px", height: "100px"});
-        })
-        
-
-
-
-        // (selector).animate({styles},speed,easing,callback)
     </script> 
-          
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="src.js"></script> -->
 </html>
