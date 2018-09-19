@@ -1,27 +1,17 @@
 <html>
-    <head>
-        <style>
-            #result{
-                width: 100px;
-                height: 100px;
-                background: #ccc;
-                border: 1px solid #666;
-            }
-        </style>
-    </head>
-    <body>
-        <button id="animate">Animate</button>
-        <div id="result"></div>
-    </body>
+    <head></head>
+    <body></body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
-    <script> 
-        // $(document).ready(function(){            
-        // });
+    <script>
+        function add(operand1, operand2){
+            operand1 = 1;
+            operand2 = 1;
+            return operand1 + operand2;
+        }
 
-        document.getElementById("animate").addEventListener('click', function(){
-            $("#result").animate({width: "200px", height: "200px", padding: "20px"}, 1000);
-        })
+        var returnValue = add();
+        console.log(returnValue);
     </script> 
 </html>
