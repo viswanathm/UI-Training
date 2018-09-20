@@ -1,17 +1,24 @@
 <html>
     <head></head>
-    <body></body>
+    <body>
+        <button id="test">Test</button>
+    </body>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
     <script>
-        function add(operand1, operand2){
-            operand1 = 1;
-            operand2 = 1;
-            return operand1 + operand2;
-        }
 
-        var returnValue = add();
-        console.log(returnValue);
+        var a = "test";
+        var b = 4;
+
+        var scores = {
+            test1: 1,
+            test2: 2,
+            test3: 3,
+            [a+b]: 4
+        };
+
+        console.log(scores.test4);
+
     </script> 
-</html>
+</html> 
