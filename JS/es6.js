@@ -61,7 +61,7 @@ sum(numbers[0], numbers[1], numbers[2]) //plain JS
 
 //--------------------------------
 //computed properties
-var a = test;
+var a = "test";
 var b = 4;
 var scores = {
     test1: 1,
