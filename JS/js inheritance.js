@@ -10,6 +10,29 @@ Notes:
 /////////////////////////////////////////////////////////////////////////////////////
 
 
+function Foo() {
+  this.value = 42;
+}
+Foo.prototype = {
+  method: function() {}
+};
+
+function Bar() {}
+
+// Set Bar's prototype to a new instance of Foo
+Bar.prototype = new Foo();
+Bar.prototype.foo = 'Hello World';
+
+// Make sure to list Bar as the actual constructor
+Bar.prototype.constructor = Bar;
+
+var b = new Bar();
+b.value; //42 // this comes from prototype and not from 
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
 
 // Initialize constructor functions
 function Hero(name, level) {

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        
+        <style>
+                .article{
+                    background: #ccc;
+                    border: 1px solid #666;
+                    border-radius: 20px;
+                    margin: 10px 0px;
+                    width: 200px;
+                    padding: 20px;
+                }
+    
+                .article-name{
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #00A8FF;
+                }
+    
+                
+    
+                .article-role{
+                    font-size: 14px;
+                    color: #666;
+                    padding-left: 10px
+                }
+
+                #loader{
+                    width: 50px;
+                }
+            </style>
+    </head>
+    <body>
+        <img id="loader" src="https://ubisafe.org/images/transparent-gif-spinner-5.gif"/>
+        <div id ="container"></div>
+        <script>
+            $.ajax("https://jsonplaceholder.typicode.com/users").done(function(articles){
+                
+                var container = $("#container");
+
+                
+                setTimeout(function(){
+                        $("#loader").remove();
+
+                        for(var i = 0; i< articles.length; i++) {
+                            var article = $("<div class='article'></div>");
+
+                            var articleName = $("<div class='article-name'>" + articles[i].name+ "</div>");
+                            article.append(articleName);
+                            var articleRole = $("<div class='article-role'>" + articles[i].email+ "</div>");
+                            article.append(articleRole);
+
+                            container.append(article);
+                        }
+
+                }, 5000);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            .article{
+                background: #ccc;
+                border: 1px solid #666;
+                border-radius: 20px;
+                margin: 10px 0px;
+                width: 200px;
+                padding: 20px;
+            }
+
+            .article-name{
+                font-size: 1.5em;
+                text-decoration: none;
+                font-weight: bold;
+                color: #00A8FF;
+            }
+
+            
+
+            .article-role{
+                font-size: 14px;
+                color: #666;
+                padding-left: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            var articles = [
+                {name: "Viswanath", role: "admin"},
+                {name: "Arun", role: "normal"},
+                {name: "Mahesh", role: "normal"}
+            ];
+
+            var container = document.getElementById("container");
+
+
+            for(var i = 0; i<articles.length; i++){
+
+                var article = document.createElement("div");
+                article.className = "article";
+
+                var articleName = document.createElement("div");
+                articleName.className = "article-name";
+                articleName.innerText = articles[i].name;
+                article.appendChild(articleName);
+
+                var articleRole = document.createElement("div");
+                articleRole.className = "article-role";
+                articleRole.innerText = articles[i].role;
+                article.appendChild(articleRole);
+
+                container.appendChild(article);
+            }
+        </script>
+    </body>
+</html>
