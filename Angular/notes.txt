@@ -1,1 +1,6 @@
 ng new <name> --style=scss --routing
+
+
+References:
+- https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course
+- http://api.openweathermap.org/data/2.5/weather?q=bangalore&units=metric&appid=864454684e0c56c960ac9555ac00425c
