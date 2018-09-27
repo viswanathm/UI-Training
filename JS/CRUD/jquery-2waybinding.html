@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            #welcome-text{
+                height: 100px;
+                background: #ccc;
+                color: #333;
+                font-size: 40px;
+            }
+
+            #copy-rights{
+                height: 100px;
+                width: 100%;
+                background: #333;
+                color: #ccc;
+                position: fixed;
+                bottom: 0px;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="welcome-text"></div>
+        <input id="username"/>
+        <div id="copy-rights"></div>
+        <script>
+            var name = "test";
+            var dictonary = {
+                a: 1,
+                b:2,
+                c:3
+            }
+
+            function convert(str){
+                return str.toUpperCase();
+            }
+
+            $("#username").attr("value", name);
+            $("#welcome-text").text(name);
+
+            $("#username").keyup(function(){
+                name = this.value;
+                $("#welcome-text").text(convert(name));
+            })
+
+            // setTimeout(function(){
+            //     name = "test1";
+                
+            //     $("#username").attr("value", name);
+            //     $("#welcome-text").text(name);
+            // },1000)
+        </script>
+    </body>
+</html>
