@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+<input type="text" [(ngModel)]="name"/> {{name}}
+<ul>
+  <li *ngFor="let post of posts">
+    <a routerLink="">{{ post.title }}</a>
+
+    <p>{{ post.body }}</p>
+  </li>
+</ul>
