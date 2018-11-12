@@ -37,9 +37,9 @@ example:
 
 * Some of the most commonly used CSS selectors are:
 
-    1. Tag selector
-    2. Class selector
-    3. ID selector
+    1. Tag selector --> tagename {}
+    2. Class selector --> .classname {}
+    3. ID selector --> #id {}
 
 Note: Preferably always write <style></style> in the <head></head>
 
