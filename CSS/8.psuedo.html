@@ -11,39 +11,44 @@
             }
 
             #abc:hover {
-                border: 1px solid red;
+                border: 1px solid #666;
+                background: #ccc;
             }
 
             ul {
                 list-style: none;
             }
 
-            li:last-child {
+            li:first-child {
                 color: blue;
                 border-bottom: 1px solid #666;
                 margin-bottom: 20px;
             }
 
-            /* #abc::after {
+            #abc::before {
                 content: 'CSE';
                 background: yellow;
-                background-image: url(images/bg.png);
                 margin: 0px 10px;
                 display: inline-block;
                 width: 200px;
                 height: 200px;
-            } */
+            }
+
+            a:active {
+                color: aqua;
+            }
         </style>
     </head>
     <body>
         <span id="abc">Test</span>
-        
-        <ul>
+
+        <!-- <a href="#">Test</a> -->
+        <!-- <ul>
             <li>Test</li>
             <li>Test1</li>
             <li>Test2</li>
             <li>Test3</li>
             <li>Test4</li>
-        </ul>
+        </ul> -->
     </body>
 </html>
