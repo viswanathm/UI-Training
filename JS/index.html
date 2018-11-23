@@ -6,43 +6,50 @@
     </head>
     <body>       
         
-        <input id="user_name"/>
+        <p id="timer"></p>
+        <input id="user_name" value="viswanath"/>
+        <button id="btn">Click me</button>
         
-        <p id="result"></p>
-
-        <!-- <button onclick="alert('hi')">Click me</button> -->
-
+        <p id="result">asdfad</p>
+        
+        
+        <script src="resources/jquery-3.3.1.min.js"></script>
         <script>
+            //jQuery
+            $("#timer").css("color","red");
 
-            var user = document.getElementById("user_name");
-            user.addEventListener("keyup", function(){
-                // console.log(user.value);
-                var res = document.getElementById("result");
+            //js
+            document.getElementById("timer").style.color = "red";
 
-                res.innerText = user.value;
-            })
+            
+            //jQuery
+            $("#timer").text("ABCEDEF");
 
-            // var x = [];
-            // x.push(1);
-            // x.push("asdasd");
-            // x.push(true);
-            // x.push([]);
-            // x.push({});
+            //js
+            document.getElementById("timer").innerText = "ABCDEF";
 
-            // var obj = {};
-            // obj.id = 1;
-            // obj.name = "asdasd";
-            // obj.isHuman = true;
-            // obj.qualification = [];
-            // obj.contacts = {};
-            // obj.pop = function(){
-            //     return 10;
-            // }
+
+            //Events
+
+            //jQuery
+            var foo = function(){
+            alert("jQury event");
+            }
+
+            $("#btn").click(foo);
+
+            // $("#btn").click(function(){
+            //     alert("jQury event");
+            // });
+
+            //plain JS
+
+            var btn = document.getElementById("btn");
+            btn.addEventListener("click", foo);
 
             
         </script>
 
-        <!-- <script src="test.js"></script> -->
     </body>
 </html>
 

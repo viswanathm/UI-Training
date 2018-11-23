@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>       
+        
+        <p id="timer"></p>
+        <input id="user_name" value="viswanath"/>
+        <button id="changer" onclick="alert('hi')">Click me</button>
+        
+        <p id="result">asdfad</p>
+        
+
+        <script>
+
+
+            var changeButton = document.getElementById("changer");
+
+            //First way of binding events
+            // changeButton.onclick = function(){
+            //     var inp = document.getElementById("user_name");
+            //     var p = document.getElementById("result");
+
+
+            //     inp.value = "ABCDEF";
+            //     p.innerText = "ABCDEF";
+            // };
+
+            var foo = function(){
+                var inp = document.getElementById("user_name");
+                var p = document.getElementById("result");
+
+
+                inp.value = "ABCDEF";
+                p.innerText = "ABCDEF";
+            };
+            //Second way
+            changeButton.addEventListener("click", foo);
+
+
+            // alternate second way
+
+            // changeButton.addEventListener("click", function(){
+            //     var inp = document.getElementById("user_name");
+            //     var p = document.getElementById("result");
+
+
+            //     inp.value = "ABCDEF";
+            //     p.innerText = "ABCDEF";
+            // });
+
+
+
+
+            var user = document.getElementById("user_name");
+            var p = document.getElementById("result")
+
+            var foo = function(){
+                    p.innerText = user.value;
+            }
+
+            user.addEventListener("keyup", foo);
+
+            
+
+            // Timeout
+            var timeoutFunc = function(){
+                alert("Timed Out");
+            }
+            setTimeout(timeoutFunc, 1000);
+
+
+            // TIMER
+
+            var x = 0;
+
+            var p = document.getElementById("timer");
+
+            var timer = function(){
+            x = x + 1;
+            p.innerText = x;
+            }
+            var timerNumber = setInterval(timer, 1000);
+
+
+            //Note: execute below line to stop the above interval;
+            // clearInterval(timerNumber);
+
+            
+        </script>
+
+        <!-- <script src="test.js"></script> -->
+    </body>
+</html>
+
