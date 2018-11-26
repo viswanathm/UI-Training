@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+
+            // $.ajax({
+            //     url: "http://api.openweathermap.org/data/2.5/weather?q=hyderabad&units=metric&appid=864454684e0c56c960ac9555ac00425c"
+            // }).done(function(res) {
+            //     alert(res.main.temp);
+            // });
+
+            var reqestObj = {
+                url: "http://api.openweathermap.org/data/2.5/weather?q=hyderabad&units=metric&appid=864454684e0c56c960ac9555ac00425c"
+            };
+
+            var callBack = function(res) {
+                alert(res.main.temp);
+            };
+
+            $.ajax(reqestObj).done(callBack);
+
+        </script>
+    </body>
+</html>

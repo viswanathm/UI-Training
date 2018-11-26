@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .emails {
+                list-style: none;
+                padding: 10px;
+            }
+
+            .emails li{
+                background: red;
+                border-bottom: 1px solid #666;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+            //level 1
+            var name = "Javascript";
+            
+            //level 2
+            var obj = {};
+            obj.firstName = "viswanath";
+            obj.lastName = "M";
+            obj.qual = "masters";
+            obj.exp = "10";
+
+            //level3
+            var names = ["Viswanath", "sagar", "test"];
+
+            
+
+            //level4
+            var emails = [];
+
+            var email = {
+                subject: "Interview call",
+                from: "ABC company",
+                date: "26/11/2018"
+            };
+
+            var email1 = {
+                subject: "Interview call1",
+                from: "DEF company",
+                date: "25/11/2018"
+            };
+
+            var email2 = {
+                subject: "Interview call2",
+                from: "GHI company",
+                date: "24/11/2018"
+            };
+
+            emails.push(email);
+            emails.push(email1);
+            emails.push(email2);
+
+
+
+            // ---- JAVASCRIPT WAY START --------
+
+            //Step1: Create JS Element
+            var newP = document.createElement("p");
+
+            //Step2: Modify the element
+            // newP.innerText = name;
+            newP.innerText = obj.firstName + " " + obj.lastName;
+            newP.style.color = "red";
+
+            //Step3: Add the JS element to Web page
+                // step 3.1 Get Parent
+                var result = document.getElementsByTagName("body");
+                var parent = result[0];
+
+                // step 3.2 append newly created element
+                parent.appendChild(newP);
+
+            // ---- JAVASCRIPT WAY END --------
+
+
+            // ---- jQuery WAY START --------
+
+            //Step1: Create jquery element
+            var jqp = $("<p></p>");
+
+
+            // Step2: Updated the above element
+            // jqp.text(name);
+            jqp.text(obj.firstName + " " + obj.lastName);
+            jqp.css("background", "yellow");
+
+            //Step3: append to parent
+
+                var parent = $("body");
+                parent.append(jqp);
+
+            // ---- jQuery WAY END --------
+
+
+
+            
+            var names = ["Viswanath", "sagar", "test", "test", "test", "test"];
+            // ---- Creating List starts ----------
+
+                var ul = document.createElement("ul");
+
+
+                // var li = document.createElement("li");
+                // li.innerText = names[0];
+                // ul.appendChild(li);
+
+                // var li1 = document.createElement("li");
+                // li1.innerText = names[1];
+                // ul.appendChild(li1);
+
+                // var li2 = document.createElement("li");
+                // li2.innerText = names[2];
+                // ul.appendChild(li2);
+
+                for(var i=0; i < names.length; i++){
+                    var li = document.createElement("li");
+                    li.innerText = names[i];
+                    ul.appendChild(li);
+                }
+
+                var body = document.getElementsByTagName("body")[0];
+                body.appendChild(ul);
+
+            // ---- Creating List Ends ----------
+
+
+
+            
+            var emails = [{
+                subject: "Interview call",
+                from: "ABC company",
+                date: "26/11/2018"
+            },{
+                subject: "Interview call1",
+                from: "DEF company",
+                date: "25/11/2018"
+            },{
+                subject: "Interview call2",
+                from: "GHI company",
+                date: "24/11/2018"
+            }]
+            // ---- Creating Email starts ----------
+
+                var ul = document.createElement("ul");
+                ul.className = "emails";
+
+                for(var i=0; i < emails.length; i++){
+                    var li = document.createElement("li");
+
+                    var chk = document.createElement("input");
+                    chk.type = "checkbox";
+                    li.appendChild(chk);
+
+                    var fromEle = document.createElement("span");
+                    fromEle.innerText = emails[i].from;
+                    li.appendChild(fromEle);
+
+                    var subEle = document.createElement("span");
+                    subEle.innerText = emails[i].subject;
+                    li.appendChild(subEle);
+
+                    var dateEle = document.createElement("span");
+                    dateEle.innerText = emails[i].date;
+                    li.appendChild(dateEle);
+
+                   
+                    ul.appendChild(li);
+                }
+
+                var body = document.getElementsByTagName("body")[0];
+                body.appendChild(ul);
+
+            // ---- Creating Email Ends ----------
+        </script>
+
+
+        <!-- <script>
+            //jQuery
+            $("#result").css("color","red");
+            $("#result").attr("title","red text");
+            $("#result").addClass("test1"); //add class to element
+            $("#result").hasClass("test1"); //boolean
+            $("#result").text("abc"); //set the text
+            $("#user_name").val("texxt"); //set input value
+
+
+            console.log($("#result").css("color"));
+            console.log($("#result").attr("title"));
+            console.log($("#result").text()); //get the text
+            $("#user_name").val()// get input value
+
+            var foo = function(){
+              alert($("#user_name").val());
+            };
+            $("#btn").click(foo);
+
+
+            var keyUpHandler = function(){
+                // this.value;
+                // event.target.value;
+                $("#result").text($("#user_name").val());
+            };
+
+            $("#user_name").keyup(keyUpHandler);
+            
+            // $("#btn").click(function(){
+
+            // });
+
+
+
+
+        </script> -->
+
+    </body>
+</html>

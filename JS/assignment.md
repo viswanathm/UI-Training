@@ -20,6 +20,7 @@ input is 5 ==>
 **
 *
 
+
 input is 5 ==>
 
 *****                
@@ -31,3 +32,8 @@ input is 5 ==>
 ***
 ****
 *****
+
+
+=> speed - timer
+=> binding events between input and <p>
+=> implement 2-6 in a single page.

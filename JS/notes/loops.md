@@ -26,6 +26,7 @@ Example:
 * declaration and incerement/decrement should be done by ourself.
 
 Syntax:
+
     <declaration>
     while(<condition>) {
         <while block>
@@ -38,3 +39,12 @@ Example:
         console.log(i);
         i++;
     }
+
+
+    
+
+    <declaration>
+    do {
+        <do-while block>
+        <increment/decrement>
+    }while(<condition>)
