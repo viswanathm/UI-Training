@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .emails {
+                list-style: none;
+                padding: 10px;
+            }
+
+            .emails li{
+                background: red;
+                border-bottom: 1px solid #666;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+
+            //level 3
+            var names = ["Viswanath", "sagar", "test", "test", "test", "test"];
+            // ---- Creating List starts ----------
+
+                var ul = document.createElement("ul");
+
+
+                // var li = document.createElement("li");
+                // li.innerText = names[0];
+                // ul.appendChild(li);
+
+                // var li1 = document.createElement("li");
+                // li1.innerText = names[1];
+                // ul.appendChild(li1);
+
+                // var li2 = document.createElement("li");
+                // li2.innerText = names[2];
+                // ul.appendChild(li2);
+
+                for(var i=0; i < names.length; i++){
+                    var li = document.createElement("li");
+                    li.innerText = names[i];
+                    ul.appendChild(li);
+                }
+
+                var body = document.getElementsByTagName("body")[0];
+                body.appendChild(ul);
+
+            // ---- Creating List Ends ----------
+        </script>
+
+    </body>
+</html>

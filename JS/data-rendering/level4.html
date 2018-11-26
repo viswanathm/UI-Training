@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .emails {
+                list-style: none;
+                padding: 10px;
+            }
+
+            .emails li{
+                background: #F5F7F7;
+                border-bottom: 1px solid #666;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+            var emails = [];
+
+            var email = {
+                subject: "Interview call",
+                from: "ABC company",
+                date: "26/11/2018"
+            };
+
+            var email1 = {
+                subject: "Interview call1",
+                from: "DEF company",
+                date: "25/11/2018"
+            };
+
+            var email2 = {
+                subject: "Interview call2",
+                from: "GHI company",
+                date: "24/11/2018"
+            };
+
+            emails.push(email);
+            emails.push(email1);
+            emails.push(email2);
+
+            // ----------- OR ---------------
+
+            var emails = [{
+                subject: "Interview call",
+                from: "ABC company",
+                date: "26/11/2018"
+            },{
+                subject: "Interview call1",
+                from: "DEF company",
+                date: "25/11/2018"
+            },{
+                subject: "Interview call2",
+                from: "GHI company",
+                date: "24/11/2018"
+            }];
+
+
+            // ---- Creating Email starts ----------
+
+            var ul = document.createElement("ul");
+            ul.className = "emails";
+
+            for(var i=0; i < emails.length; i++){
+                var li = document.createElement("li");
+
+                var chk = document.createElement("input");
+                chk.type = "checkbox";
+                li.appendChild(chk);
+
+                var fromEle = document.createElement("span");
+                fromEle.innerText = emails[i].from;
+                li.appendChild(fromEle);
+
+                var subEle = document.createElement("span");
+                subEle.innerText = emails[i].subject;
+                li.appendChild(subEle);
+
+                var dateEle = document.createElement("span");
+                dateEle.innerText = emails[i].date;
+                li.appendChild(dateEle);
+
+                
+                ul.appendChild(li);
+            }
+
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(ul);
+
+            // ---- Creating Email Ends ----------
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+            //level 1
+            var name = "Javascript";
+
+
+            // ---- JAVASCRIPT WAY START --------
+
+            //Step1: Create JS Element
+            var newP = document.createElement("p");
+
+            //Step2: Modify the element
+            newP.innerText = name;
+            newP.style.color = "red";
+
+            //Step3: Add the JS element to Web page
+                // step 3.1 Get Parent
+                var result = document.getElementsByTagName("body");
+                var parent = result[0];
+
+                // step 3.2 append newly created element
+                parent.appendChild(newP);
+
+            // ---- JAVASCRIPT WAY END --------
+
+
+            // ---- jQuery WAY START --------
+
+            //Step1: Create jquery element
+            var jqp = $("<p></p>");
+
+
+            // Step2: Updated the above element
+            jqp.text(name);
+            jqp.css("background", "yellow");
+
+            //Step3: append to parent
+
+                var parent = $("body");
+                parent.append(jqp);
+
+            // ---- jQuery WAY END --------
+        </script>
+    </body>
+</html>
