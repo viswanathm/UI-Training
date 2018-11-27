@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+    <body>       
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="../resources/jquery-3.3.1.min.js"></script>
+
+        <input id="city"/> <input id="btn" type="button" value="Get Temperature"/>
+        <h1 id="result"></h1>
+
+        <script>
+
+            // $.ajax({
+            //     url: "http://api.openweathermap.org/data/2.5/weather?q=hyderabad&units=metric&appid=864454684e0c56c960ac9555ac00425c"
+            // }).done(function(res) {
+            //     alert(res.main.temp);
+            // });
+
+            // ------------- OR --------------
+
+            $("#btn").click(function(){
+                var city = $("#city").val();
+
+                var reqestObj = {
+                    url: "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=metric&appid=864454684e0c56c960ac9555ac00425c"
+                };
+
+                var callBack = function(res) {
+                    // alert(res.main.temp);
+                    $("#result").text("Temperature of " + city + " is " + res.main.temp);
+                };
+
+                $.ajax(reqestObj).done(callBack);
+            })
+
+
+
+
+        </script>
+    </body>
+</html>

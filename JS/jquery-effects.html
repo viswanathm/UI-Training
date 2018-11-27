@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            #result{
+                width: 50px;
+                height: 50px;
+                padding: 5px;
+                background: red;
+            }
+        </style>
+
+    </head>
+    <body>       
+        <button id="animate">Animate</button>
+        <button id="reset">Reset</button>
+        <p id="result">asdfad</p>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+        <script src="resources/jquery-3.3.1.min.js"></script>
+
+        <script>
+
+            // $(selector).animate({styles},speed,easing,callback)
+            // $("#result").animate({width: "200px", height: "200px", padding: "20px"}, 1000);
+
+            $("#animate").click(function(){
+                $("#result").animate({width: "200px", height: "200px", padding: "20px"}, 1000);
+            })
+
+            $("#reset").click(function(){
+                $("#result").animate({width: "50px", height: "50px"}, 1000);
+            })
+
+        </script>
+
+    </body>
+</html>
