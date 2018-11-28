@@ -11,9 +11,9 @@
                 background: yellow;
             }
 
-            div {
+            /* div {
                 height: 200px;
-            }
+            } */
 
             #test {
                 bottom: 0px;
@@ -22,13 +22,41 @@
         </style>
     </head>
     <body>    
-            <button type="button" class="close" aria-label="Close">
+            <!-- <button type="button" class="close" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-            </button>
-            <div id="test" class="position-fixed bg-dark p-3 text-light border border-danger rounded">
+            </button> -->
+
+
+<!-- 
+ colors ==> primary, secondary, success, danger, info, light, dark
+ Text color ==> text-<color>
+ background color ==> bg-<color>
+ border color ==> border-<color>
+
+ border ==> border
+ rounded border  ==> rounded
+ display ==> d-<disaply values>
+ position ==> position-<position values>
+
+ shadow ==> shadow
+
+ width ==> w-<%>
+ height ==> h-<%>
+
+ padding ==> p-<value 0 - n>
+    directional - apply direction ==> pt, pr, pb, pl instead of p
+
+ margin ==> m-<value 0 - n>
+     directional - apply direction ==> mt, mr, mb, ml instead of m
+ -->
+
+            <!-- <div id="test" class="position-fixed bg-dark p-3 text-light border border-danger rounded">
                     text
+            </div> -->
+            <div class="w-25 h-25 bg-primary text-light border border-danger p-2 mb-2 d-inline-block">
+                    text1
             </div>
-            <div class="w-25 h-25 shadow-lg bg-dark p-3 text-light border border-danger rounded">
+            <div class="w-25 h-25 bg-primary text-light border border-danger p-2 mt-2 d-inline-block">
                     text1
             </div>
     </body>
