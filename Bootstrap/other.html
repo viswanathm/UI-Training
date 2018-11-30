@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap</title>
     <style>
       body{
         background: #000;
@@ -115,10 +115,16 @@
 
     <!-- TEXT ALIGNMENT and FORMATTING -->
 
-    <!-- <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p class="text-center">Center aligned text on all viewport sizes.</p>
-    <p class="text-right">Right aligned text on all viewport sizes.</p> -->
+    <!-- <div class="m-4">
+      <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="text-center">Center aligned text on all viewport sizes.</p>
+      <p class="text-right">Right aligned text on all viewport sizes.</p>
+    </div> -->
+
+    <!-- <div class="text-nowrap" style="width: 100px; background: #666; color: yellow;">
+      This text should overflow the parent.
+    </div> -->
 
     <!-- <div class="text-nowrap text-truncate" style="width: 100px; background: #666; color: yellow;">
       This text should overflow the parent.
@@ -204,7 +210,7 @@
     <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
     <div class="p-3 mb-2 bg-white text-dark">.bg-white</div> -->
 
-    <!-- <div class="mx-auto" style="width: 200px;">
+    <!-- <div class="mx-auto bg-primary" style="width: 200px;">
       Centered element
     </div> -->
 
@@ -235,7 +241,7 @@
 
     <!-- Buttons -->
     <!-- <div class="mt-4 ml-2">
-      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-primary disabled">Primary</button>
       <button type="button" class="btn btn-primary active">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-success">Success</button>
@@ -262,13 +268,13 @@
      <!-- <button type="button" class="btn btn-primary btn-lg">Large button</button>
     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
 
-    <button type="button" class="btn btn-primary">Large button</button>
-    <button type="button" class="btn btn-secondary">Large button</button>
+    <button type="button" class="btn btn-primary">Medium button</button>
+    <button type="button" class="btn btn-secondary">Medium button</button>
 
     <button type="button" class="btn btn-primary btn-sm">Small button</button>
     <button type="button" class="btn btn-secondary btn-sm">Small button</button> -->
 
-    <!-- <div class="w-50 bg-danger">
+    <!-- <div class="w-100 bg-danger">
       <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
       <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
     </div> -->
@@ -327,7 +333,7 @@
       <li class="list-group-item">Vestibulum at eros</li>
     </ul> -->
 
-    <!-- <ul class="list-group m-4">
+    <!-- <ul class="list-group m-4 text-dark">
       <li class="list-group-item">Dapibus ac facilisis in</li>
       <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
       <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
@@ -384,13 +390,13 @@
     </div> -->
 
     <!-- FORM -->
-    <!-- <form class="w-50 m-4">
+    <!-- <form class="w-25 m-4">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <div class="">
+      <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
@@ -435,13 +441,16 @@
 
     <!-- SIZING -->
     <!-- <div class="form-group w-50 m-4">
-      <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-      <input class="form-control" type="text" placeholder="Default input">
-      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+      <input class="form-control form-control-lg m-4" type="text" placeholder=".form-control-lg">
+      <input class="form-control m-4" type="text" placeholder="Default input">
+      <input class="form-control form-control-sm m-4" type="text" placeholder=".form-control-sm">
     </div> -->
 
     <!-- READONLY INPUT -->
-    <!-- <div class="form-group">
+    <!-- <div class="form-group w-25 m-4">
+        <input class="form-control" type="text" placeholder="Readonly input here…">
+    </div>
+    <div class="form-group w-25 m-4">
         <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
     </div> -->
 
@@ -450,7 +459,7 @@
       <div class="form-group row">
         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          <input type="text" readonly class="form-control-plaintext text-light" id="staticEmail" value="email@example.com">
         </div>
       </div>
       <div class="form-group row">
@@ -465,7 +474,7 @@
     <!-- <form class="form-inline">
       <div class="form-group mb-2">
         <label for="staticEmail2" class="sr-only">Email</label>
-        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        <input type="text" readonly class="form-control-plaintext text-light" id="staticEmail2" value="email@example.com">
       </div>
       <div class="form-group mx-sm-3 mb-2">
         <label for="inputPassword2" class="sr-only">Password</label>
@@ -556,10 +565,10 @@
     <!-- FORM ROW - more compact -->
     <!-- <form>
       <div class="form-row">
-        <div class="col">
+        <div class="col-8">
           <input type="text" class="form-control" placeholder="First name">
         </div>
-        <div class="col">
+        <div class="col-4">
           <input type="text" class="form-control" placeholder="Last name">
         </div>
       </div>
@@ -614,7 +623,7 @@
     </form> -->
 
     <!-- HORIZANTAL FORM EXMAPLE -->
-    <!-- <form>
+    <!-- <form class="m-4">
       <div class="form-group row">
         <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
@@ -681,7 +690,7 @@
           </div>
           <div class="invalid-feedback">
               Doesnt look good!
-            </div>
+          </div>
         </div>
         <div class="col-md-4 mb-3">
           <label for="validationCustom02">Last name</label>
@@ -877,7 +886,7 @@
       </div> -->
 
       <!-- ALERT WITH ACTION -->
-      <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <!-- <div class="alert alert-warning alert-dismissible fade show m-4" role="alert">
         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -886,11 +895,11 @@
 
       <!-- PROGRESS BARS -->
       <!-- <div class="progress w-25 m-4">
-        <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar w-25" role="progressbar"></div>
       </div>
 
       <div class="progress w-25 m-4">
-        <div class="progress-bar w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+        <div class="progress-bar w-50" role="progressbar">50%</div>
       </div> -->
 
       <!-- HEIGHT -->
@@ -1101,8 +1110,8 @@
       <!-- <div class="card w-25 m-4">
         <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title text-dark">Card title</h5>
+          <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div> -->
@@ -1117,16 +1126,16 @@
       </div> -->
 
     <!-- COLLAPSE -->
-    <!-- <p>
+    <!-- <p class="m-4">
       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         Link with href
       </a>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" type="button">
         Button with data-target
       </button>
     </p>
     <div class="collapse" id="collapseExample">
-      <div class="card card-body">
+      <div class="card card-body text-dark">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
       </div>
     </div> -->
@@ -1157,7 +1166,7 @@
     </button> -->
     
     <!-- Modal -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -1167,7 +1176,13 @@
             </button>
           </div>
           <div class="modal-body">
-            TEST CONTENT
+             <ul class="list-group">
+               <li class="list-group-item active">abc</li>
+               <li class="list-group-item">abc</li>
+               <li class="list-group-item">abc</li>
+               <li class="list-group-item">abc</li>
+               <li class="list-group-item">abc</li>
+             </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family: "Raleway";
+}
+.navbar{
+	background:#F97300;
+}
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #f97300;
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+
+/*header style*/
+.header{
+	position: relative;
+	background-image: url('../images/headerback.jpg');
+
+	background-size: cover;
+	background-position: center;
+}
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+
+}
+.description h1{
+	color:#F97300 ;
+}
+.description p{
+	color:#666;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.5;
+}
+.description button{
+	border:1px  solid #F97300;
+	background:#F97300;
+	color:#fff;
+}
+.about{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.about h1{
+	color:#F97300;
+	margin: 2em;
+}
+.about img{
+	height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:4px solid #10828C;
+}
+.about .desc h3{
+	color: #10828C;
+}
+.about .desc p{
+	line-height:2;
+	color:#888;
+}
+
+
+/*Portfolio*/
+.portfolio{
+	margin: 4em 0;
+    position: relative;	
+}
+.portfolio h1{
+	color:#F97300;
+	margin: 2em;	
+}
+.portfolio img{
+	 height: 15rem;
+	 width: 100%;
+	 margin: 1em;
+
+	
+
+}
+
+/*blog style*/
+
+.blog{
+	margin: 4em 0;
+	position: relative;	
+}
+.blog h1{
+	color:#F97300;
+	margin: 2em;	
+}
+.blog .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.blog .card img{
+	width: 100%;
+	height: 12em;
+}
+@media and (max-width: 768px){
+ .team .item img{
+ 	width: 100%;
+ }	
+}
+.blog .card-title{
+	color:#F97300;
+	 
+}
+.blog .card-body{
+	padding: 1em;
+}
+.team{
+	margin: 4em 0;
+	position: relative;
+
+}
+.team h1{
+	color:#F97300;
+	margin: 2em;	
+}
+.team .item{
+	position: relative;
+	overflow: hidden;	
+}
+.team .des{
+	background: #F97300;
+	color: #fff;
+	text-align: center;
+	border-top-right-radius: 93%;
+	transition:.3s ease-in-out;
+	position: absolute;
+	width: 88%;
+	bottom: 24px;
+
+
+}
+.team .item:hover .des{
+	height: 100%;
+	background:#f973007d;
+    position: absolute;
+	width: 89%;
+	padding: 5em;
+	top: 0;
+	border-top-right-radius: 0;
+}
+.contact-form{
+	margin: 6em 0;
+	position: relative;		
+}
+
+.contact-form h1{
+	padding:2em 1px;
+	color: #F97300; 
+}
+.contact-form .right{
+	max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+	background:  #F97300;
+	color: #fff;
+	border:0;
+}
+.contact-form .right .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
+}
