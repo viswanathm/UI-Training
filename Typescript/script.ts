@@ -1,5 +1,3 @@
-var b:string = "abcd";
-
 //---------------------- TYPES
 
 let isDone: boolean = false;
@@ -10,12 +8,13 @@ let list: number[] = [1, 2, 3];
 let list1: Array<number> = [1, 2, 3];
 
 
+
 //TUPLE
 let x: [string, number] = ["hello", 10]; //cannot rever assign types
 console.log(x[0].substr(1)); //cannot use substr on x[1]
-    //accessing elements outside array
-    x[3] = "world"; //can assing only tuple types
-    console.log(x[5].toString()); //can only use methods that are possible on tupe types
+//accessing elements outside array
+x[3] = "world"; //can assing only tuple types
+console.log(x[5].toString()); //can only use methods that are possible on tupe types
 
 //ENUM
 enum Color {Red, Green, Blue}; //default 0,1,2
@@ -72,7 +71,7 @@ var obj:Object = {};
 
 let someValue: any = "1";
 let numSomeValue: number = someValue as number;
-// let numSomeValue: number = <number> someValue;
+let numSomeValue1: number = <number> someValue;
 console.log(numSomeValue);
 
 //-------------------------- Default and optional params

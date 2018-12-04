@@ -1,5 +1,4 @@
 var b = "abcd";
-
 //---------------------- TYPES
 var isDone = false;
 var decimal = 6;
@@ -7,15 +6,12 @@ var fullName = "blue";
 var sentence = "Hello, my name is " + fullName;
 var list = [1, 2, 3];
 var list1 = [1, 2, 3];
-
 //TUPLE
 var x = ["hello", 10]; //cannot rever assign types
 console.log(x[0].substr(1)); //cannot use substr on x[1]
 //accessing elements outside array
 x[3] = "world"; //can assing only tuple types
 console.log(x[5].toString()); //can only use methods that are possible on tupe types
-
-
 //ENUM
 var Color;
 (function (Color) {
@@ -25,15 +21,12 @@ var Color;
 })(Color || (Color = {}));
 ; //default 0,1,2
 var c = Color.Green;
-
 // enum Color {Red = 1, Green, Blue}; // we can start at differnt index.
-// enum Color {Red = 1, Green = 2, Blue = 4}; // manually set each value.
-
+// enum Color {Red = 1, Green = 2, Blue = 4}; // manually set east value.
 //reverse lookup
 // enum Color {Red = 1, Green, Blue}
 // let colorName: string = Color[2];
 // console.log(colorName);
-
 //ANY
 var notSure = 4;
 notSure = "maybe a string instead";

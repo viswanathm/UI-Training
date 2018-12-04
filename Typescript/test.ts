@@ -1,4 +1,4 @@
-var test:string = "abc";
+// var test:<data-type> = "abc";
 
-enum Color {Pink = 1, Pinky, pinker};
-console.log(Color.Pink);
+var test:string = "abc";
+var num:number = 1;
